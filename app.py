@@ -1,3 +1,8 @@
+import sys
+if sys.version_info >= (3, 12):
+    import warnings
+    warnings.warn("Python 3.12+ may have compatibility issues with some packages. "
+                 "Consider using Python 3.11 for this application.")
 import streamlit as st
 import pandas as pd
 import numpy as np
